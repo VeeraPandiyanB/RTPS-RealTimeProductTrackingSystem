@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgr"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/listIcon"
+              android:layout_marginStart="10dp"
+              app:layout_constraintEnd_toStartOf="@id/pickListNameTextView"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:background="@drawable/ic_view_list_black_24dp"
+
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:layout_marginLeft="10dp" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/pickListIDTextView"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:drawableLeft="@drawable/ic_view_list_black_24dp"-->
+<!--                android:hint="PickListId"-->
+<!--                android:textAlignment="center"-->
+<!--                android:gravity="center"/>-->
+
+            <TextView
+                android:id="@+id/pickListNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="PickListName"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/listIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickListDateTextView"
+                app:layout_constraintStart_toEndOf="@id/pickListNameTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                android:hint="PickListDate"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:id="@+id/pickListViewButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="25dp"
+                android:background="@color/babyblue"
+                android:text="@string/view"
+                android:layout_marginRight="25dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

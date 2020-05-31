@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="border" type="style">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="black"></stroke>
+            <solid android:color="grey"></solid>
+        </shape>
+    </item>
+</resources>
